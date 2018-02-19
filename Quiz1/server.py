@@ -5,7 +5,7 @@ import ping_pb2_grpc
 
 from concurrent import futures
 
-class PingServer(ping_pb2.PingPongServicer):
+class PingServer(ping_pb2_grpc.PingPongServicer):
     def ping(self, request, context):
         # TODO
         print("Encode:\n", request)
